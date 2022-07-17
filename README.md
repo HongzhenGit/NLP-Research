@@ -8,5 +8,6 @@ The NN designed in this trail consists of three layers:<br>
 1. The pre-trained BERT layer(transform the texts into numerical vectors)<br>
 2. A dropout layer with probability of 0.3(an effective technique for regularization and preventing the co-adaptation of neurons)<br>
 3. A linear layer to get the final output<br>
+
 The loss function selected is BCEWithLogitsLoss. This loss function combines a Sigmoid layer and the BCELoss in one single class. For more information about this loss function, please refer: https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html<br>
 
