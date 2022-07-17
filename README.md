@@ -14,3 +14,6 @@ The loss function selected is BCEWithLogitsLoss. This loss function combines a S
 After the loss is calculated by BCEWithLogitsLoss, an Adam optimizer is applyed to do the backward propagation paramater updating. After servel EPOCHs, the loss on validation set will start to increase, and this is the time point where the model training should be stopped(early stopping). Once all binary classifiers(for each category) are well-trained, an Onve VS Rest multi-category classifier could be constructed by combining them: a sample would be grouped into the corresponding class of a classifer that gives the largest score.<br>
 To evaluate the performance of each binary classifier, the Precision and Recall Rates by thresholds and the loss on Validation and Training sets are illustrated:<br>
 ![Binary Classifier Evaluation](https://github.com/HongzhenGit/NLP-Research/blob/main/Assets/Binary%20Claasifier%20Performance.png)<br>
+The performance of the final One VS Rest Classifier could be validated through a confusion matrix:<br>
+![Confusion Matrix](https://github.com/HongzhenGit/NLP-Research/blob/main/Assets/One%20VS%20Rest%20Classifier%20Heatmap.png)<br>
+***For more details and codes, please check in my notebook.***
