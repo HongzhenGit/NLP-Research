@@ -11,5 +11,6 @@ The NN designed in this trail consists of three layers:<br>
 
 The loss function selected is BCEWithLogitsLoss. This loss function combines a Sigmoid layer and the BCELoss in one single class. For more information about this loss function, please refer: https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html<br>
 ## Model Training and Validation
-After the loss is calculated by BCEWithLogitsLoss, an Adam optimizer is applyed to do the backward propagation paramater updating. After servel EPOCHs, the loss on validation set will start to increase, and this is the time point where the model training should be stopped(early stopping).<br>
-Once all binary classifiers(for each category) are well-trained, an Onve VS Rest multi-category classifier could be constructed by combining them: a sample would be grouped into the corresponding class of a classifer that gives the largest score.<br>
+After the loss is calculated by BCEWithLogitsLoss, an Adam optimizer is applyed to do the backward propagation paramater updating. After servel EPOCHs, the loss on validation set will start to increase, and this is the time point where the model training should be stopped(early stopping). Once all binary classifiers(for each category) are well-trained, an Onve VS Rest multi-category classifier could be constructed by combining them: a sample would be grouped into the corresponding class of a classifer that gives the largest score.<br>
+To evaluate the performance of each binary classifier, the Precision and Recall Rates by thresholds and the loss on Validation and Training sets are illustrated:<br>
+![Binary Classifier Evaluation](https://github.com/HongzhenGit/NLP-Research/blob/main/Assets/Binary%20Claasifier%20Performance.png)<br>
