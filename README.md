@@ -16,4 +16,4 @@ To evaluate the performance of each binary classifier, the Precision and Recall 
 ![Binary Classifier Evaluation](https://github.com/HongzhenGit/NLP-Research/blob/main/Assets/Binary%20Claasifier%20Performance.png)<br>
 The performance of the final One VS Rest Classifier could be validated through a confusion matrix:<br>
 ![Confusion Matrix](https://github.com/HongzhenGit/NLP-Research/blob/main/Assets/One%20VS%20Rest%20Classifier%20Heatmap.png)<br>
-***For more details and codes, please check in my notebook.***
+***For more details and codes, please check my notebook.***
